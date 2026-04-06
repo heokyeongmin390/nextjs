@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#f8f9ff",
+                    "on-primary-fixed-variant": "#0038b6",
+                    "on-tertiary-container": "#77ffab",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#0052ff",
+                    "outline-variant": "#c3c5d9",
+                    "surface-container-high": "#dee9fc",
+                    "tertiary-fixed": "#70fda7",
+                    "secondary": "#a33800",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#121c2a",
+                    "surface-tint": "#004ced",
+                    "inverse-surface": "#27313f",
+                    "background": "#f8f9ff",
+                    "tertiary-container": "#007642",
+                    "tertiary-fixed-dim": "#51df8e",
+                    "secondary-container": "#cd4800",
+                    "surface-container": "#e6eeff",
+                    "on-tertiary-fixed-variant": "#00522c",
+                    "inverse-primary": "#b7c4ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffdbce",
+                    "on-tertiary-fixed": "#00210e",
+                    "on-primary-fixed": "#001452",
+                    "on-secondary-fixed": "#370e00",
+                    "tertiary": "#005b31",
+                    "primary": "#003ec7",
+                    "on-secondary-container": "#fffbff",
+                    "on-background": "#121c2a",
+                    "on-secondary-fixed-variant": "#802a00",
+                    "surface": "#f8f9ff",
+                    "on-primary-container": "#dfe3ff",
+                    "surface-container-highest": "#d9e3f6",
+                    "outline": "#737688",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#ffb59a",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d0dbed",
+                    "primary-fixed": "#dde1ff",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "surface-variant": "#d9e3f6",
+                    "on-surface-variant": "#434656",
+                    "inverse-on-surface": "#eaf1ff",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">LUMIÈRE &amp; GRAIN</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 font-manrope tracking-tight hover:opacity-80 transition-all duration-300" href="#">Menu</a>
+<a class="text-blue-700 dark:text-blue-400 font-semibold border-b-2 border-blue-600 font-manrope tracking-tight hover:opacity-80 transition-all duration-300" href="#">Reservations</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 font-manrope tracking-tight hover:opacity-80 transition-all duration-300" href="#">Locations</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 font-manrope tracking-tight hover:opacity-80 transition-all duration-300" href="#">Story</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 font-manrope tracking-tight hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold hover:opacity-80 transition-all duration-300 active:scale-95 duration-200 ease-in-out">
+                Book a Table
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-8">
+<div class="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed rounded-full text-sm font-bold tracking-widest uppercase">Casual &amp; Vibrant</div>
+<h1 class="text-6xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] text-on-surface">
+                        맛있는 즐거움이 <br/> <span class="text-secondary">시작되는 곳.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                        신선한 재료와 활기찬 에너지가 가득한 LUMIÈRE &amp; GRAIN에서 사랑하는 사람들과 함께 잊지 못할 미식의 순간을 경험하세요.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-secondary-container text-white rounded-xl font-bold text-lg hover:opacity-90 transition-all flex items-center gap-2">
+                            지금 바로 예약하기
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-8 py-4 bg-surface-container-high text-on-surface rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-all">
+                            메뉴 둘러보기
+                        </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary-fixed rounded-full blur-3xl opacity-50"></div>
+<div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Restaurant atmosphere" class="w-full h-[500px] object-cover" data-alt="vibrant casual restaurant interior with diverse group of friends laughing and sharing modern comfort food in bright warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBTiXXhFfFcb4uXGZ-KKBE4JtfnYEeCnwKaeB-INw3D2JAnD38nYm5T4xtoLKXjh5MN1tQ7IiHsJ3eSr3LH7g0HrvtdAE0RXpeFQ2kQ7qjrGFHs2o6Rys1_BFqgw0G2TSvVtT1C4oq4Cqp1lvPZ3sjrO9IQzHdcZ8XQOc6OwzypAle5HjJgoyGQW2ZHpAvX-Qo0B8_cbiEfeRMCT-0e1KNny1EnYvbnbvlsffT3RrMq8q1rOSTrWAFoYmAQiC2NcI4pRE74Q6ehiOc"/>
+</div>
+<div class="absolute -bottom-6 -right-6 z-20 bg-surface-container-lowest p-6 rounded-2xl shadow-xl flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface-variant">오늘의 추천</p>
+<p class="text-lg font-black text-secondary">시그니처 바비큐 플래터</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Dishes Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="space-y-4">
+<span class="label-md font-bold tracking-widest text-secondary uppercase">Popular Dishes</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter">인기 메뉴 베스트</h2>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
+                        전체 메뉴 보기
+                        <span class="material-symbols-outlined">arrow_outward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+<!-- Main Featured Item -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col justify-between group overflow-hidden relative">
+<div class="z-10">
+<span class="bg-secondary text-white px-4 py-1 rounded-full text-xs font-bold uppercase mb-4 inline-block">Best Seller</span>
+<h3 class="text-4xl font-black mb-4">트러플 머쉬룸 버거</h3>
+<p class="text-on-surface-variant max-w-sm">깊은 풍미의 트러플 오일과 육즙 가득한 패티가 조화를 이루는 프리미엄 수제버거</p>
+</div>
+<div class="absolute bottom-0 right-0 w-3/4 translate-x-10 translate-y-10 group-hover:scale-110 transition-transform duration-700">
+<img alt="Burger" class="w-full h-full object-contain" data-alt="extreme close up of a gourmet juicy burger with melting cheese, mushrooms and truffle sauce on a brioche bun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC86LOVh6oxiS7pnhuB16mpdhpmydVtGcz6Tjesh4kjC0hTLWRUOqUK0jZcg_wm9hEox58n4iY_qxIwxyTrzKDF29evsRPP8RNzQfx3BAArHY0hQ_gpi70UFr_ygsEX1mK31WeRdO2tv2Aj8m6xB19WiTqites6E_tvBCZgsadIDdvUV7i9B2-UffpnkYzoYZx_pBC7twwWwoBe0MVTQAKc18KaOw_lIFSxXOjtEXEe6zgUiIxASzswDocF0YMOUJjxgflFp-lbMGnD"/>
+</div>
+<div class="z-10 mt-12">
+<p class="text-3xl font-black text-on-surface">₩18,000</p>
+</div>
+</div>
+<!-- Secondary Items Grid -->
+<div class="md:col-span-5 grid grid-rows-2 gap-6">
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 flex items-center justify-between group overflow-hidden">
+<div class="flex-1">
+<h3 class="text-2xl font-black mb-2">프레쉬 연어 샐러드</h3>
+<p class="text-on-surface-variant text-sm mb-4">노르웨이산 생연어와 상큼한 유자 드레싱</p>
+<p class="text-xl font-black">₩15,000</p>
+</div>
+<div class="w-32 h-32 group-hover:scale-110 transition-transform duration-500">
+<img alt="Salad" class="w-full h-full object-cover rounded-2xl" data-alt="fresh salmon salad with greens, citrus segments, and avocado in a bright ceramic bowl on a light surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEPbfMpufgv13ACy4_uAeYwah3p0ZjHJn93vmZqiZRElRtiFBAjDzzvSaDXPR0VK0l9Vpv4aYitOjwGPdy0HGpHNuu83mywzJVJpy2E-_gC7hy9WY4yM76xvxD8MFpGWQtQ1cGGBGLlku7NTaSyFPl32zxpyMOuE_f-JMl95WKyV09xqju-VnXQi68H6kE02iao23uBob1YuUi4CUQZ-nZM_aXcccsRaeEYl36JIk8tLIZJumOipgoWReVYp16rPd8V65bsSe7D6sE"/>
+</div>
+</div>
+<div class="bg-secondary-container text-white rounded-[2rem] p-8 flex flex-col justify-center relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-20">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">local_pizza</span>
+</div>
+<h3 class="text-3xl font-black mb-2">페퍼로니 폭탄 피자</h3>
+<p class="text-white/80 mb-6">빈틈없이 꽉 채운 페퍼로니와 진한 모짜렐라 치즈의 만남</p>
+<button class="bg-white text-secondary-container w-fit px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all">
+                                주문하기
+                            </button>
+</div>
+</div>
+<!-- Bottom Wide Item -->
+<div class="md:col-span-12 bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col md:flex-row items-center gap-8 overflow-hidden group">
+<div class="md:w-1/2">
+<img alt="BBQ" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700" data-alt="large platter of slow-cooked smoky beef brisket and ribs with sides of coleslaw and cornbread" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuyZKAAnOciSB2wEwudZ2nAoy5Cevu2nlmXprPe8InbY4uaqiUq1qZwqbEPJzfiTxNI893eB1rBKOVraoyGYQ_yYZK5R9ibG_2OAthOymP_hSSZYyS3K4_yv2CdUb4LS0Mk6X8xRMcyQXaYc8lxlVuoCkBXmOSrqpdpYo71rFy6oP5qskluQW0YkRuke8eb5H7RsvYJ8-VDgqEeEYuCgMDE8ndAr0-JDu5QTUsAdX-ged9Rr93aUUj3shuKNjSIL8hs2GphmJJ2sjv"/>
+</div>
+<div class="md:w-1/2 space-y-4">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm">Chef's Choice</span>
+<h3 class="text-4xl font-black">쉐프 시그니처 스테이크</h3>
+<p class="text-on-surface-variant leading-relaxed">최고급 한우 본연의 맛을 살린 시어링 기법과 쉐프만의 특제 소스가 어우러진 최고의 스테이크입니다.</p>
+<div class="flex items-center gap-6">
+<span class="text-3xl font-black">₩45,000</span>
+<div class="flex gap-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-black tracking-tighter">리얼 보이스 💬</h2>
+<p class="text-on-surface-variant">LUMIÈRE &amp; GRAIN을 다녀가신 고객님들의 솔직한 후기</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/20 hover:-translate-y-2 transition-transform duration-300">
+<div class="flex gap-1 text-orange-500 mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg leading-relaxed mb-8 italic">"분위기도 너무 좋고 음식 비주얼이 미쳤어요! 특히 트러플 버거는 인생 버거입니다. 친구들이랑 또 오려구요. 😍"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Reviewer" class="w-full h-full object-cover" data-alt="portrait of a smiling young woman in casual wear with natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlO_BMPfmig50e-fti9PRK625p-_oU5Uh1jPJD95dUiLsyhOfLSSWtCuF20RDJvHsQhMWlsEq9U2flRA36S3ctydC65dfaTXTIRgHXFdH-VR8ZEO5rDm1FTC_hkkXK6umLzpBEX31UII-wjumfoqzFHpEBAuPzw3-IqHl5KmWNA2HYzSeS4jEKjOqV0TmpuwE4V90ugyuRamJuY1E6C1M7xwJzyMorLAM5f2_uAO5pw1O_GxDWMBYDhwWiGSa2THqxHVTC-SDA0Ay8"/>
+</div>
+<div>
+<p class="font-bold">김민지 님</p>
+<p class="text-xs text-on-surface-variant">Local Guide</p>
+</div>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/20 hover:-translate-y-2 transition-transform duration-300">
+<div class="flex gap-1 text-orange-500 mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg leading-relaxed mb-8 italic">"주말 데이트 장소로 최고였어요. 직원분들도 너무 친절하시고 음악 선곡까지 완벽했습니다. 피자가 정말 맛있어요! 🍕"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Reviewer" class="w-full h-full object-cover" data-alt="professional portrait of a young man smiling against a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZHKRD-y8Kh-IglXB-XKhkKbwJi1d2lTeBG8T5NYmBarSybR-fcp0uyATVM0VKO9nKC8V-IQJ89w5LRXY9bD2K1xrZR3TH7UoPYhkGq1AgkdK_GW7Au17WqcIHgSf0076pSE8ygwGPvjrj_CT1rQogF8ruYcMMUl7B9i9_mIijaa3gzItufhUSJbGMDe-xfiT0aa3jtyAlAAZL119dnsgyRM6p9At12pdQb_FHDU2e9LdM2asFu2_j6CjdklU8EZpqcamM0Yqnk7Br"/>
+</div>
+<div>
+<p class="font-bold">이정후 님</p>
+<p class="text-xs text-on-surface-variant">Foodie Traveler</p>
+</div>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/20 hover:-translate-y-2 transition-transform duration-300">
+<div class="flex gap-1 text-orange-500 mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="text-lg leading-relaxed mb-8 italic">"가족 모임으로 방문했는데 남녀노소 다 좋아할 만한 메뉴들이라 만족스러웠어요. 고기 질이 정말 좋네요. 강추! 🍖"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Reviewer" class="w-full h-full object-cover" data-alt="candid portrait of a cheerful woman with warm backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-0T2g3LvJGZRKr3YA_QivA85HD-B-ajWoNpShimwCCUKJtVfZVRmKBhCHeTgdjDwBIsmvnFwWUzN53-60LdWZlkzcBOTenzwxe6dgtoqjvYnGoZFMtgceiJh5tp3Yp3woiQyUnVgqirDDTv3XplvdyZc3wqGALJTPf5P3ZCC6zgfHIro1GghZRw5R3wvBIfrv6uVje3BTiCrWbO9RWoGVKatkCEZtXANW1n1N3G8r8DJbfnL21dadzv04WXeV_Ahf8d-kmmESCKir"/>
+</div>
+<div>
+<p class="font-bold">박지현 님</p>
+<p class="text-xs text-on-surface-variant">Home Chef</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-24 bg-surface-container-highest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-[3rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+<div class="lg:w-1/2 p-12 lg:p-20 space-y-8">
+<h2 class="text-5xl font-black tracking-tighter leading-tight text-on-surface">기다림 없이 즐기세요 <br/><span class="text-secondary">지금 바로 예약하기</span></h2>
+<p class="text-on-surface-variant text-lg">원하시는 날짜와 시간을 선택하시면 최상의 테이블로 준비해 드립니다.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant">성함</label>
+<input class="w-full px-6 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="홍길동" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant">연락처</label>
+<input class="w-full px-6 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="010-0000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant">예약 인원</label>
+<select class="w-full px-6 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-secondary/40 transition-all">
+<option>2명</option>
+<option>4명</option>
+<option>6명 이상 (단체)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant">예약 일시</label>
+<input class="w-full px-6 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-secondary/40 transition-all" type="datetime-local"/>
+</div>
+</div>
+<button class="w-full bg-secondary-container text-white py-5 rounded-2xl font-black text-xl hover:shadow-lg transition-all active:scale-95" type="submit">예약 확정하기</button>
+</form>
+</div>
+<div class="lg:w-1/2 relative h-[400px] lg:h-auto">
+<img alt="Restaurant interior" class="w-full h-full object-cover" data-alt="wide shot of a sunlit modern casual dining room with wooden furniture and warm inviting atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4_0iiDM0Doo8FNLkWnBNeXVjWSmXXAery6rQUC64AfFn29_qdt7maJ8oTYu_fyA9RGlW9N8Wcp_7XUT40rCKsT190cLrTKqa-4KLYZOgi62i2bYLsqYqAtKmTf9VI29Ju-6PwWufwYr1CtrQ-czmQXlwo9eWjL-VJ4BzTcaYMxV-ll4r4C4bn55kmLtHVTu85psxYCsiWE9Eb5L3cZkWavUXiirlpLzh7uOE25PvYAzq2cSKbgxZjV8FqGUbTSDIBtLPkuIZITz35"/>
+<div class="absolute inset-0 bg-secondary/10 backdrop-none"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-black text-slate-900 dark:text-slate-50 font-headline uppercase tracking-tighter">LUMIÈRE &amp; GRAIN</div>
+<p class="font-manrope text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400">© 2024 Gastronomy Group. Designed with Editorial Architect.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-manrope text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors opacity-100 hover:opacity-70" href="#">Privacy Policy</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors opacity-100 hover:opacity-70" href="#">Terms of Service</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors opacity-100 hover:opacity-70" href="#">Accessibility</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors opacity-100 hover:opacity-70" href="#">Careers</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors opacity-100 hover:opacity-70" href="#">Press Kit</a>
+</div>
+</footer>
+</body></html>

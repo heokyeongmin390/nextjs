@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TemplateHub - 프리미엄 템플릿 포탈</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "tertiary-fixed": "#70fda7",
+                    "on-background": "#121c2a",
+                    "inverse-on-surface": "#eaf1ff",
+                    "tertiary-fixed-dim": "#51df8e",
+                    "secondary-fixed": "#ffdbce",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#004ced",
+                    "inverse-primary": "#b7c4ff",
+                    "secondary-fixed-dim": "#ffb59a",
+                    "surface-container": "#e6eeff",
+                    "primary-container": "#0052ff",
+                    "primary": "#003ec7",
+                    "on-secondary-container": "#fffbff",
+                    "surface-dim": "#d0dbed",
+                    "primary-fixed": "#dde1ff",
+                    "surface-container-low": "#eff4ff",
+                    "error": "#ba1a1a",
+                    "secondary": "#a33800",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-surface": "#27313f",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c3c5d9",
+                    "on-primary-fixed-variant": "#0038b6",
+                    "on-secondary-fixed-variant": "#802a00",
+                    "on-surface-variant": "#434656",
+                    "outline": "#737688",
+                    "surface-variant": "#d9e3f6",
+                    "on-secondary-fixed": "#370e00",
+                    "on-primary-container": "#dfe3ff",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#005b31",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#00210e",
+                    "on-primary-fixed": "#001452",
+                    "surface-container-highest": "#d9e3f6",
+                    "on-error": "#ffffff",
+                    "background": "#f8f9ff",
+                    "on-surface": "#121c2a",
+                    "secondary-container": "#cd4800",
+                    "tertiary-container": "#007642",
+                    "on-tertiary-container": "#77ffab",
+                    "on-tertiary-fixed-variant": "#00522c",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#dee9fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            background: linear-gradient(180deg, rgba(248, 249, 255, 0.9) 0%, rgba(248, 249, 255, 0.4) 100%);
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl dark:bg-slate-900/70">
+<div class="flex justify-between items-center h-20 px-8 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-blue-600 dark:text-blue-400">TemplateHub</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-600 dark:text-blue-400 font-semibold border-b-2 border-blue-600 pb-1 font-manrope tracking-tight" href="#">Company</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium pb-1 font-manrope tracking-tight hover:text-blue-500 transition-colors duration-200" href="#">Marketing</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium pb-1 font-manrope tracking-tight hover:text-blue-500 transition-colors duration-200" href="#">Cafe</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium pb-1 font-manrope tracking-tight hover:text-blue-500 transition-colors duration-200" href="#">Restaurant</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2.5 bg-primary text-on-primary font-semibold rounded-lg hover:opacity-90 active:scale-95 transition-all">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-24 md:py-32">
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-primary bg-primary-container/20 rounded-full">PREMIUM TEMPLATES</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-on-surface mb-8">
+                        당신의 비즈니스에 <br/><span class="text-primary">완벽한 템플릿</span>을 선택하세요
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl font-light">
+                        성공적인 온라인 브랜딩의 시작. 각 분야별 최고의 전문가들이 설계한 12가지 독보적인 디자인을 지금 만나보세요.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-primary text-on-primary rounded-xl font-bold flex items-center gap-2 hover:shadow-xl hover:shadow-primary/20 transition-all" href="#templates">
+                            템플릿 탐색하기
+                            <span class="material-symbols-outlined">arrow_downward</span>
+</a>
+<button class="px-8 py-4 bg-surface-container-highest text-on-surface rounded-xl font-bold hover:bg-surface-container-high transition-all">
+                            커스텀 문의하기
+                        </button>
+</div>
+</div>
+</div>
+<!-- Abstract background shape -->
+<div class="absolute top-0 right-0 -mr-24 -mt-24 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-24 -mb-24 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-3xl"></div>
+</section>
+<!-- Filter Bar -->
+<section class="sticky top-20 z-40 bg-surface/80 backdrop-blur-md border-y border-outline-variant/10" id="templates">
+<div class="max-w-screen-2xl mx-auto px-8 py-6 flex flex-wrap items-center justify-between gap-6">
+<div class="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full font-semibold whitespace-nowrap">전체보기</button>
+<button class="px-6 py-2 bg-surface-container text-on-surface-variant rounded-full font-semibold hover:bg-surface-container-high transition-all whitespace-nowrap">회사 소개</button>
+<button class="px-6 py-2 bg-surface-container text-on-surface-variant rounded-full font-semibold hover:bg-surface-container-high transition-all whitespace-nowrap">마케팅 랜딩</button>
+<button class="px-6 py-2 bg-surface-container text-on-surface-variant rounded-full font-semibold hover:bg-surface-container-high transition-all whitespace-nowrap">카페</button>
+<button class="px-6 py-2 bg-surface-container text-on-surface-variant rounded-full font-semibold hover:bg-surface-container-high transition-all whitespace-nowrap">음식점</button>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined">tune</span>
+<span class="text-sm font-medium">정렬 기준: 최신순</span>
+</div>
+</div>
+</section>
+<!-- Templates Grid -->
+<section class="bg-surface-container-low py-20 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<!-- Card 1: 회사 소개 (신뢰형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="신뢰형 회사소개" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern corporate office interior with clean glass walls and professional atmosphere, high-end photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWIVvJEiSbtk6scHtgmq0Yp8G8ht7jAXoBajRT3Bvt5kTr4b6vdPnIPS3lef-cDZU98XYVo0FPWO6y_7-QLv5xxxfaK8e3-27GTGqlZJOGeA4zl-zpb8JH05-E4seCrwZ_uUZqACA88DQCsreLMmI5lYeN64KyRkFvjGus0Act2eP6Kf2bOFikCq_h1ginPRmwN_K0o0jWu52Iq8QcmGiOHMKBfZj3ZDeRRuJQeS7_bRpqMdR1vgd5iATHSSfV02vn52kA9P80PqK1"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-blue-500/90 text-white text-[10px] font-bold rounded uppercase tracking-widest backdrop-blur-sm">Corporate</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">회사 소개 (신뢰형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2 leading-relaxed">비즈니스의 전문성과 신뢰를 강조하는 견고한 레이아웃입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 2: 회사 소개 (미니멀형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="미니멀형 회사소개" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist architecture with concrete and glass, clean lines, bright daylight, editorial architectural style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbDQXMR5aefI3IP9HffZ_Ny9aw727c9sKtSTzBDEbmuFf3CwGeesMiq0RthLXzjHP632KL1TyITpuKtLRPufOT2-4_1U7l8SohmzSGXfuIs_2xQTiNLmHyntyxTShfuqrCo2TQ1DMMGdzpHuwdCGGKhI2WmahbqUSkKeH31_vZFcmHt3_faQIckZBP-BkpuKPkbjFiJrurm4p9BkdoIT3r0U5tHf0WHDebpkCoowjfGKVT5e0D2cc_9rlDDx3rqocHNUDTMi9ti6vL"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-blue-500/90 text-white text-[10px] font-bold rounded uppercase tracking-widest backdrop-blur-sm">Minimalist</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">회사 소개 (미니멀형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">여백의 미를 살린 고급스러운 브랜딩을 위한 최적의 선택입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 3: 회사 소개 (창의형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="창의형 회사소개" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Creative studio space with vibrant abstract art, modern designer furniture, and dynamic lighting shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzxc6OD3z7qkCdBiubio_MNwyGpRyabeQVwjwAn5PHMFL8e-k-dsT_GAaPd3BoADhcuhCcvRE3_r6u7astReXiv0TYfeUk8I0zSEde-aHbWT3vdalLd1332wK4cQPd6hkweK2Ur7hHRv3gTOA-6bTkZ0h2XQaJMKvBzOE0ydtSlTXZqHsR2nlqz-JtLCwTTvoOGM7KJZ2UzWYouzZs0totPxBUBhvR4xfH1LNYmCu8g6FfNSo_ga75YdUzZvexRLRpU4N5pzWPG8nD"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold rounded uppercase tracking-widest">Creative</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">회사 소개 (창의형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">독창적인 아이디어와 영감을 전달하는 변칙적 레이아웃입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 4: 회사 소개 (기술형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="기술형 회사소개" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up of circuit board with glowing blue lights, high-tech industrial aesthetic, macro photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1ZS9UBvsMklXqso24saqmMOq1W3Wgbf1fMiP5FLD8N3AsRDAK2qQV0eGexMiaWSMKj7Rz-MVyAm-uaqZ4Ua58LXEUy_3mVRAewjn_qMjKdf3ozMWzuP9STKyrQbBQnw2pNMw_eYXY5qAb-CLmUI8NcMmrjcvdSuMDuCzZJuNz1Diq9QlLvDsYu7rC3eTIy95KGCXuK8QH1X9UOUdJ1t4T0tOZlzzGlReR9jcoIx7-VktEcEt1YLtDeNmPvtOo0ZK7ueB841kUIEEM"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-bold rounded uppercase tracking-widest">Tech</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">회사 소개 (기술형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">데이터와 기술력을 효과적으로 보여주는 다크 테마 디자인입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 5: 마케팅 랜딩 (전환형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="전환형 마케팅" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Digital analytics dashboard on a sleek laptop, colorful charts and graphs, clean minimalist workplace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeBezbFPmzuwvJYUY9j4AFpAYetM0Ib_ug_WZd1MMj6cmUDET4ll2rsTB6K-P1aYCXAWVM7Lfor0LZolzifjotSuJnaS4i6f10A-Dzz_jYWGiSwpmI-E87pZf5sYrfA85YxX6YlDzhqwJuVdWHZTbD9xWJXuKKSCLA5Va_T3sBUTNiDXOqgCMpNAESg9xs0kmw1VSc9DnfoRTnb8tQ6LLGGCG8jAWp_XtMa9szksgo6Lxfs24RjpUWumP53ivgPsjJrf_r_BIs3zVD"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold rounded uppercase tracking-widest">Marketing</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">마케팅 랜딩 (전환형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">클릭과 구매 전환율을 극대화하도록 설계된 CTA 중심 랜딩입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 6: 마케팅 랜딩 (스토리형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="스토리형 마케팅" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="People collaborating around a wooden table in a sunlit loft, creative session, warm human connection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3qJ4N2z0C-Y2VsFMhZ28bmM3lwhRVCofK5uSlk8TXPJQV5c1wcxjcpmpACY8EA9wzihq6t8JQnwJFrCVOo2XY0NbkMF5eAWZOcBxFOLM9Qio21cBI8WR0ynk4MEunIFTcMqULj8jLZ6vI5FQKQ7jru0m7FINE9jpt-YQvGEsjDKosqXmkzYni50Uv3g4CZzVPivPvFU61-fWskG5CtlG0T2iGVNYuzgZiD9ZC0M0VVsS-N0VH6u4GEiefZ6ss3_E88188-KBqhDxs"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold rounded uppercase tracking-widest">Branding</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">마케팅 랜딩 (스토리형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">브랜드의 서사를 감각적인 비주얼로 풀어내는 템플릿입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 7: 마케팅 랜딩 (기능형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="기능형 마케팅" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Clean software interface screenshot, SaaS product layout, professional UI design with blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeeIpr96Z4HCqdyC0iULJisjnAWG1u9Cf-fsVgB1x8H9qCImbv1ddxFVH5zvIbzYh8Uw3zmss9LeFjzHuFFTKrzc8DBHtW9Rr3Fyplat-G4P2MEyQJZ35VXGbS87pVjrZA_D3McsvVLUkCX32QLIsX97YCKcT2boSgBjgMsNz-d1Nep0iTX6H5y0DKHsDhuJklkNyeaDus7AggyK66zQ8lUoeDr6e6Ll4C9J-WL4QV1QwDOKiF0HQr6-PJvpMDqHwdc1LHsUCcxTVb"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold rounded uppercase tracking-widest">SaaS</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">마케팅 랜딩 (기능형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">복잡한 서비스의 핵심 기능을 일목요연하게 전달합니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 8: 마케팅 랜딩 (원페이지형) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="원페이지형 마케팅" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern workspace with desk, lamp, and minimal decor, clean aesthetic for a one page profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_0wV33HfzccAmabiq-A0PTonQ61a_9deG4b9Nv00pqOA2zNAYh1LCdG78LcPM0B9COzlMf90tUfU-r1hhejy2Unwlaw0zZzTtxwn8Fe_O8TyDjUVzQ2pBFWq_FkkgADTSLNm7Y4uhVOcHzTKQNkFsssjRPnzh35D5APOW92arH6jyJGgwl0WthB9f6KWQ7F_Q52psV56b5E6brvkmmuQMuxVlyp_ZPLCalFFGUT3XsDkHYAz12vUylLbDFSa2hs_e0mqVy8vnp35N"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary-fixed-dim text-primary text-[10px] font-bold rounded uppercase tracking-widest">Single Page</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">마케팅 랜딩 (원페이지형)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">가장 빠르고 효율적으로 핵심 메시지를 전달하는 단일 페이지입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 9: 카페 (감성 우드) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="감성 우드 카페" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Cozy wooden cafe interior with warm lighting, plants, and natural textures, inviting atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC72GiR1wdywKRNPmCWSs9B_8iGQU5EsBm4M7Dkqmsh4wYQSXdSxHalZNu03pKYWuQjOZpJC-mVjQBH8KlYmJ2feMj4Cl7Ea99y5hzCB_1xcH4ALy8OryzMCpewaowmUCIrgNGMV0swr_4vABhIHi9kfsGm2hh039MNECrPNvlxSvshu4qzz6WgHTb0raYl2i_2HIbJfEM2f2-a3Wudfa-49JCuejWI8GqSC2famBF_hkHG6qan86KGzyLBFTNt1t6YAVlJGYml0N7k"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold rounded uppercase tracking-widest">Cafe</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">카페 (감성 우드)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">따뜻하고 아늑한 분위기를 전달하는 우드 톤의 디자인입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 10: 카페 (모던 다크) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="모던 다크 카페" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Sleek modern cafe with black marble counters, industrial lighting, and monochrome aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPdsc7cMTTQWkdGiTlk45A2BNMeoCZgpeVkHgc-LukUQygod6RrQxPPEGdmKScSkU55NkRADyFhpEvnNjM52VezBsz9HOhEWtwo7A0jYCRL0XbLp9MVjEqivRrzvBhXD3t8m6IvUaeHeRJ-JgWVC2XOxEmjRB-uN5tenQwbN7X5p8lDu2y8LF0w3xXPtr6JhEvRi7Y3XEsH91lK2_yTJQ6FJcFoLyrxG7Zx8MWVNIVoezfJK1r5icJF32n_BM83uUmVMvVd46DE12h"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-inverse-surface text-on-primary text-[10px] font-bold rounded uppercase tracking-widest">Modern</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">카페 (모던 다크)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">세련된 도시적 감각을 강조하는 블랙 &amp; 그레이 테마입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 11: 음식점 (파인 다이닝) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="파인 다이닝" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Exquisite plate of gourmet food, fine dining restaurant atmosphere, dim moody lighting, elegant table setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gb0TTeu-VmCSKmHe5mNdIANOOYjiwB5dtOWUyknjXfymonbRj1fQhc2zkSk_HC1M9LSFiOJdnnYwWwG5ac9RE7ZMhObW9u1aP5i2pK_L3eKJ1DfzF71PHwLiG_mqOPUxUBqpKeK3JgdLSYXLRN_xE1QBGtcqk0rp_989_AcAimVFhTosWA_PTrg0-_K-xYC-QHR3qOjaPEFotebKzYmkJkMJzLMAqBwtvlKJaIsjWzGOFuPcilQJT1WQ8qhaVvCqkQMka5FtYA8Y"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold rounded uppercase tracking-widest">Luxury</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">음식점 (파인 다이닝)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">고품격 다이닝의 가치를 담아낸 우아하고 절제된 디자인입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card 12: 음식점 (캐주얼 다이닝) -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="캐주얼 다이닝" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Lively casual restaurant with colorful decor, burgers and pizzas on table, friendly and bright environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUVqHjWYlwdvN_eJylp0YJ6fS5YYJwOCgFkYqQeDmdkVUUgMeELtZk1ivs-yEzzb_CUOARiRBhx_WnuWw2ngE_8Tc4lyGujtdFfVIqwIe6i6jenZdJn38BLua0MIcJBYoOGgju2gY_PjJ5eOrtaO6sV0chD5xAxdUP_BVv-U6YpDzi335_FSIyjgvCPsT-0rVltua55Pobnr18_HfLP6L5yjUyU1ecFfz9qdncwP-6-QPvwub7xf36tnzAJsEDRbHRiF1QixmM7Vzm"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-tertiary text-white text-[10px] font-bold rounded uppercase tracking-widest">Casual</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-on-surface mb-2">음식점 (캐주얼 다이닝)</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">누구나 편하게 방문할 수 있는 밝고 활기찬 분위기의 템플릿입니다.</p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl group-hover:bg-primary group-hover:text-on-primary transition-all flex items-center justify-center gap-2">
+                                Preview
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary-container/10 py-24 px-8 text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-extrabold text-on-surface mb-6">찾으시는 스타일이 없으신가요?</h2>
+<p class="text-lg text-on-surface-variant mb-10">귀사만의 특별한 브랜드 정체성을 담은 1:1 맞춤형 템플릿 제작도 가능합니다.</p>
+<button class="px-10 py-4 bg-primary text-on-primary rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/20">
+                    전문가와 상담하기
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">TemplateHub</div>
+<p class="font-manrope text-sm text-slate-500 dark:text-slate-400">© 2024 TemplateHub. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-manrope text-sm text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-all hover:underline" href="#">Privacy Policy</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-all hover:underline" href="#">Terms of Service</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-all hover:underline" href="#">Cookie Settings</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-all hover:underline" href="#">Contact Us</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-xl">language</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</div>
+</div>
+</footer>
+</body></html>
