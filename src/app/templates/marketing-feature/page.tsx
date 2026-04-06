@@ -239,9 +239,8 @@ export default function TemplatePage() {
 <div className="max-w-3xl mx-auto">
 <h2 className="text-3xl font-extrabold tracking-tight text-center mb-12 text-slate-900">기술 문의 FAQ</h2>
 <div className="space-y-4">
-<details className="group bg-white border border-slate-200 rounded-lg overflow-hidden" open="">
-<summary className="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-slate-50 transition-colors">
-<span className="text-base font-bold text-slate-800">기존 인프라 데이터를 마이그레이션할 수 있나요?</span>
+    <details className="group bg-white border border-slate-200 rounded-lg overflow-hidden" open={true}>
+        <summary className="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-slate-50 transition-colors"><span className="text-base font-bold text-slate-800">기존 인프라 데이터를 마이그레이션할 수 있나요?</span>
 <span className="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
 </summary>
 <div className="px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">

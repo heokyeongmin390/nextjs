@@ -161,10 +161,9 @@ export default function TemplatePage() {
 </div>
 </div>
 <div className="space-y-1.5">
-<label className="text-[10px] font-bold uppercase tracking-widest text-primary ml-1">Project Details</label>
-<textarea className="w-full px-6 py-4 bg-surface-container border-none rounded-2xl focus:ring-2 focus:ring-primary/30 transition-all outline-none text-sm" placeholder="어떤 프로젝트를 계획 중이신가요?" rows="4"></textarea>
-</div>
-<button className="w-full py-4 bg-primary text-white rounded-2xl font-headline font-bold text-base hover:brightness-110 transition-all duration-300 shadow-lg shadow-primary/10">보내기</button>
+    <label className="text-[10px] font-bold uppercase tracking-widest text-primary ml-1">Project Details</label>
+    <textarea className="w-full px-6 py-4 bg-surface-container border-none rounded-2xl focus:ring-2 focus:ring-primary/30 transition-all outline-none text-sm" placeholder="어떤 프로젝트를 계획 중이신가요?" rows={4}></textarea>
+</div><button className="w-full py-4 bg-primary text-white rounded-2xl font-headline font-bold text-base hover:brightness-110 transition-all duration-300 shadow-lg shadow-primary/10">보내기</button>
 </form>
 </section>
 </main>

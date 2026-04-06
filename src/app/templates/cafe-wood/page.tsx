@@ -157,10 +157,9 @@ export default function TemplatePage() {
 <input aria-label="이메일" className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="email@example.com" type="email" />
 </div>
 <div>
-<label className="block text-sm font-bold text-on-surface mb-2 uppercase tracking-wide">문의내용</label>
-<textarea aria-label="문의내용" className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="궁금하신 점이나 대관 문의를 남겨주세요" rows="4"></textarea>
-</div>
-<button className="w-full bg-on-surface text-surface py-5 rounded-xl font-bold hover:bg-secondary transition-colors text-lg" type="submit">
+    <label className="block text-sm font-bold text-on-surface mb-2 uppercase tracking-wide">문의내용</label>
+    <textarea aria-label="문의내용" className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="궁금하신 점이나 대관 문의를 남겨주세요" rows={4}></textarea>
+</div><button className="w-full bg-on-surface text-surface py-5 rounded-xl font-bold hover:bg-secondary transition-colors text-lg" type="submit">
                                 메시지 보내기
                             </button>
 </form>
