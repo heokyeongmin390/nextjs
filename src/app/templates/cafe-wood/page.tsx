@@ -27,7 +27,7 @@ export default function TemplatePage() {
 
 <section className="relative min-h-[921px] flex items-center overflow-hidden">
 <div className="absolute inset-0 z-0">
-<img className="w-full h-full object-cover" data-alt="Cinematic wide shot of a sun-drenched cozy cafe with warm wooden interiors, vintage furniture, and steam rising from a coffee cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ZqWXpz1Hm4f7hmK3v2X2P2njAKXSRzIuuMY2AZMbuTCGVBSJDnTfz-dhHCMMfUjEAZ9-iPeVI2nRfTlywwd2ooGicFmm5P0RLidhducUNmSB3WJJ0FWEGacDhPOjYYH7iKfsTslKuSv0IALh8OCyhnoyUxRZu6k_yLL-fsb6tCvDHgoPU01V1zZLZzRRBsSuhSZU70khEPTaibuHHIkz2TpfeCejs3u8NzwgWni_hOP7YjyIDua116raDFAfKQmCRX8E56_SF4sb" />
+<img alt="Cinematic wide shot of a sun-drenched cozy cafe with warm wooden interiors, vintage furniture, and steam rising from a coffee cup" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ZqWXpz1Hm4f7hmK3v2X2P2njAKXSRzIuuMY2AZMbuTCGVBSJDnTfz-dhHCMMfUjEAZ9-iPeVI2nRfTlywwd2ooGicFmm5P0RLidhducUNmSB3WJJ0FWEGacDhPOjYYH7iKfsTslKuSv0IALh8OCyhnoyUxRZu6k_yLL-fsb6tCvDHgoPU01V1zZLZzRRBsSuhSZU70khEPTaibuHHIkz2TpfeCejs3u8NzwgWni_hOP7YjyIDua116raDFAfKQmCRX8E56_SF4sb" />
 <div className="absolute inset-0 bg-gradient-to-r from-on-surface/40 to-transparent"></div>
 </div>
 <div className="container mx-auto px-6 relative z-10">
@@ -119,7 +119,7 @@ export default function TemplatePage() {
 </div>
 
 <div className="md:col-span-4 group relative overflow-hidden rounded-3xl bg-surface-container-lowest transition-all hover:shadow-xl">
-<img className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Handmade scones served with clotted cream and strawberry jam on a rustic ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv39KLWS1teLAsOgvd78h8oLBwzvPXzaPo_FChdeO8bWpNcbxzxt0ZW2de7qh_ZCoecDfu511MF0mDk2vDZv2mjDQKS2gCfgaPMtrCe-Tlp0AerB0NcInlQqC57LhuVeNKW7cBe3_n9BTRD97oHzH-YhkmFSf4Z_d7t-87kDrCfvAxOuyeoNkv-l461yKmDBugf0OYS9Q-AGELFFiHqQaJcFWnyIFRcRV7V2fpEu3WDBWWrsXzR24g2E9-T3eQuoidYHQQY4w7nSfr" />
+<img alt="Handmade scones served with clotted cream and strawberry jam on a rustic ceramic plate" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv39KLWS1teLAsOgvd78h8oLBwzvPXzaPo_FChdeO8bWpNcbxzxt0ZW2de7qh_ZCoecDfu511MF0mDk2vDZv2mjDQKS2gCfgaPMtrCe-Tlp0AerB0NcInlQqC57LhuVeNKW7cBe3_n9BTRD97oHzH-YhkmFSf4Z_d7t-87kDrCfvAxOuyeoNkv-l461yKmDBugf0OYS9Q-AGELFFiHqQaJcFWnyIFRcRV7V2fpEu3WDBWWrsXzR24g2E9-T3eQuoidYHQQY4w7nSfr" />
 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
 <div className="absolute bottom-0 p-8 text-white">
 <h3 className="text-2xl font-bold mb-1">수제 통밀 스콘</h3>
@@ -150,15 +150,15 @@ export default function TemplatePage() {
 <form className="space-y-6">
 <div>
 <label className="block text-sm font-bold text-on-surface mb-2 uppercase tracking-wide">이름</label>
-<input className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="성함을 입력하세요" type="text" />
+<input aria-label="이름" className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="성함을 입력하세요" type="text" />
 </div>
 <div>
 <label className="block text-sm font-bold text-on-surface mb-2 uppercase tracking-wide">이메일</label>
-<input className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="email@example.com" type="email" />
+<input aria-label="이메일" className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="email@example.com" type="email" />
 </div>
 <div>
 <label className="block text-sm font-bold text-on-surface mb-2 uppercase tracking-wide">문의내용</label>
-<textarea className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="궁금하신 점이나 대관 문의를 남겨주세요" rows="4"></textarea>
+<textarea aria-label="문의내용" className="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="궁금하신 점이나 대관 문의를 남겨주세요" rows="4"></textarea>
 </div>
 <button className="w-full bg-on-surface text-surface py-5 rounded-xl font-bold hover:bg-secondary transition-colors text-lg" type="submit">
                                 메시지 보내기

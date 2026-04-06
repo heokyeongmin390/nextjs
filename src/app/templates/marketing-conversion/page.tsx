@@ -45,9 +45,9 @@ export default function TemplatePage() {
 </div>
 <div className="flex items-center gap-6 border-t border-outline-variant/30 pt-8">
 <div className="flex -space-x-3">
-<img className="w-12 h-12 rounded-full border-4 border-white object-cover shadow-md" data-alt="close-up portrait of a professional businessman in a grey suit smiling confidently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCSZDXudl3CmusTSAykICwKzBpP4KCpB6aWEAh-jE6eYy8Ygo6u0rwtRMDZftwGvWtM6b-1pZ9nEKkL-p_kBWsnkV2XA2DfRvo01vlyOG0_me8r_6k70n-CakUU8-lNtMlNfcGIX10hHQLixGDuOirwEqAPeV7R72JVd-mY0rAKN24UCmirKrOneKtBtsDrjUW1w5sfWi-ghozRg75fU0umn0YO6qgmyiAUwGwzNuft5TlBT-4G39z2wpBIG3Cw-20ehuB8VoGKhN" />
-<img className="w-12 h-12 rounded-full border-4 border-white object-cover shadow-md" data-alt="professional young woman with glasses smiling in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgEDUiw35crQABG6fpj0KX2Mkm7QLNOxjbMT1NMnYICv9atPv27y6PzEg4HCRFSQhiw-GwZGQwph20BIntw9uvSd2zG6LNKttmWzJF0UztACoXhc978GvlB8GJpTSf54KsRr20vAy-irZGmfvUONP3r9ndOg8EKGppwuVB8i3ujmE9doZO1IcZDFEn7PgAzsCqoIo-UCm3qz4ex87OGNpn5M3hgJVK-lovxAdkvK59EA2jQA6Kz7wG5HPEmmx5sHcB4rAf4tkkVg9X" />
-<img className="w-12 h-12 rounded-full border-4 border-white object-cover shadow-md" data-alt="close-up of a creative professional male looking thoughtfully into the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmLwr9X5BOP_BTijtUyZfjDTJA50aeLCsCIQ_fjULCASa3S2tFZ_Edo31UcuXnTgqRL_Aza6AIuFWCKMRF5GEt_bSmSoCMOTzagVfYfJfLU6ku1_T-84Zjof79zCjHT5dDEQWY7xlyPO1owxxBWjtXjGnlmUEic74A4ZJxrXpKuwqtMH3wTkrLkCKzlrjy-CFpAWd_iJ-df_IiwxVGmj5FitdkCirs0Bzz_LQ__XDOT0Z92_h96xf-bqoDrhK3Rkqjdo0t5cI_byoP" />
+<img alt="close-up portrait of a professional businessman in a grey suit smiling confidently" className="w-12 h-12 rounded-full border-4 border-white object-cover shadow-md" data-alt="close-up portrait of a professional businessman in a grey suit smiling confidently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCSZDXudl3CmusTSAykICwKzBpP4KCpB6aWEAh-jE6eYy8Ygo6u0rwtRMDZftwGvWtM6b-1pZ9nEKkL-p_kBWsnkV2XA2DfRvo01vlyOG0_me8r_6k70n-CakUU8-lNtMlNfcGIX10hHQLixGDuOirwEqAPeV7R72JVd-mY0rAKN24UCmirKrOneKtBtsDrjUW1w5sfWi-ghozRg75fU0umn0YO6qgmyiAUwGwzNuft5TlBT-4G39z2wpBIG3Cw-20ehuB8VoGKhN" />
+<img alt="professional young woman with glasses smiling in a modern office setting" className="w-12 h-12 rounded-full border-4 border-white object-cover shadow-md" data-alt="professional young woman with glasses smiling in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgEDUiw35crQABG6fpj0KX2Mkm7QLNOxjbMT1NMnYICv9atPv27y6PzEg4HCRFSQhiw-GwZGQwph20BIntw9uvSd2zG6LNKttmWzJF0UztACoXhc978GvlB8GJpTSf54KsRr20vAy-irZGmfvUONP3r9ndOg8EKGppwuVB8i3ujmE9doZO1IcZDFEn7PgAzsCqoIo-UCm3qz4ex87OGNpn5M3hgJVK-lovxAdkvK59EA2jQA6Kz7wG5HPEmmx5sHcB4rAf4tkkVg9X" />
+<img alt="close-up of a creative professional male looking thoughtfully into the camera" className="w-12 h-12 rounded-full border-4 border-white object-cover shadow-md" data-alt="close-up of a creative professional male looking thoughtfully into the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmLwr9X5BOP_BTijtUyZfjDTJA50aeLCsCIQ_fjULCASa3S2tFZ_Edo31UcuXnTgqRL_Aza6AIuFWCKMRF5GEt_bSmSoCMOTzagVfYfJfLU6ku1_T-84Zjof79zCjHT5dDEQWY7xlyPO1owxxBWjtXjGnlmUEic74A4ZJxrXpKuwqtMH3wTkrLkCKzlrjy-CFpAWd_iJ-df_IiwxVGmj5FitdkCirs0Bzz_LQ__XDOT0Z92_h96xf-bqoDrhK3Rkqjdo0t5cI_byoP" />
 </div>
 <div>
 <p className="text-sm text-on-surface-variant font-medium">현재 <span className="font-black text-primary">12,402명</span>이 이용 중</p>
@@ -65,7 +65,7 @@ export default function TemplatePage() {
 <div className="absolute -top-10 -right-10 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-pulse"></div>
 <div className="absolute -bottom-10 -left-10 w-80 h-80 bg-secondary/30 rounded-full blur-[80px]"></div>
 <div className="relative bg-white p-2 rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(233,30,99,0.2)] border border-primary/5">
-<img className="w-full rounded-[2.2rem] shadow-sm border border-outline-variant/10" data-alt="clean and modern web application dashboard interface showing analytics graphs and conversion charts with blue and orange accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1VuyMbdFtQlJZAG6IK-vfNUe85ZCsiS0TD0vHKcUBvrjCAJhxgTW-Y-GNdj1P9Y_9ufodIsU3rxlQ4Z_0EWvY0Z2JpmjSJWUkMnyIE-TTtAdUnMITTMb-ojwGD6OZG4vatu5ScaDonWAiDOHGHPuhaM1kCemlZ0abfRcyNDnJYNf97lJe_WNk4Ysk8jp3VpmIXdZt6k6nJNPYzwIVWpELzn78tnxGc1gLxlLvkRSJEXEU6xTaKbkXlLD6gTiAEAUKFa38i3DJguYE" />
+<img alt="clean and modern web application dashboard interface showing analytics graphs and conversion charts with blue and orange accents" className="w-full rounded-[2.2rem] shadow-sm border border-outline-variant/10" data-alt="clean and modern web application dashboard interface showing analytics graphs and conversion charts with blue and orange accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1VuyMbdFtQlJZAG6IK-vfNUe85ZCsiS0TD0vHKcUBvrjCAJhxgTW-Y-GNdj1P9Y_9ufodIsU3rxlQ4Z_0EWvY0Z2JpmjSJWUkMnyIE-TTtAdUnMITTMb-ojwGD6OZG4vatu5ScaDonWAiDOHGHPuhaM1kCemlZ0abfRcyNDnJYNf97lJe_WNk4Ysk8jp3VpmIXdZt6k6nJNPYzwIVWpELzn78tnxGc1gLxlLvkRSJEXEU6xTaKbkXlLD6gTiAEAUKFa38i3DJguYE" />
 <div className="absolute -bottom-6 -right-6 bg-cta-gradient p-6 rounded-3xl shadow-2xl border-4 border-white transform rotate-3">
 <div className="flex items-center gap-4 text-white">
 <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
@@ -92,12 +92,7 @@ export default function TemplatePage() {
 <span className="text-on-secondary font-black italic">BEST CONVERSION TOOL 2024</span>
 </div>
 </div>
-<style>
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-    </style>
+<style dangerouslySetInnerHTML={{ __html: ` @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } } ` }} />
 
 <section className="bg-white py-16 border-b border-primary/5">
 <div className="max-w-7xl mx-auto px-8">
@@ -129,7 +124,7 @@ export default function TemplatePage() {
 <p className="text-on-surface-variant leading-relaxed max-w-md text-lg">망설임을 허용하지 않는 속도. 업계 평균보다 3배 빠른 로딩으로 고객이 이탈할 틈을 주지 않습니다.</p>
 </div>
 <div className="mt-12 overflow-hidden rounded-2xl border-4 border-surface-container-high">
-<img className="w-full h-56 object-cover hover:scale-110 transition-transform duration-700" data-alt="abstract visualization of high speed data transmission with neon blue flowing lines on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlkMwF71WTt_CVhl9htDwYecX-ctxGeMz2vlybyo1DtD-xQvsk9YF5eOjgEM60NXZRRYNXu8suloMexd4F7TE-XeweGJxSKdy9YsmTk39935Z65AxSFe8Fey9QSEQJI0R8FHVpsPyYk73o8_3qVYptdHrowbgsRb1Z6SVzKRirfjProyKvAWdaf4QlZ46S5Wp63-uyBqXEpFYeYnolYfsyvaR5us1i2s0PaOfjzgoSwJ_3O9raIMfqom4ReZWj237O6qTc-TBGMqR" />
+<img alt="abstract visualization of high speed data transmission with neon blue flowing lines on a dark background" className="w-full h-56 object-cover hover:scale-110 transition-transform duration-700" data-alt="abstract visualization of high speed data transmission with neon blue flowing lines on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlkMwF71WTt_CVhl9htDwYecX-ctxGeMz2vlybyo1DtD-xQvsk9YF5eOjgEM60NXZRRYNXu8suloMexd4F7TE-XeweGJxSKdy9YsmTk39935Z65AxSFe8Fey9QSEQJI0R8FHVpsPyYk73o8_3qVYptdHrowbgsRb1Z6SVzKRirfjProyKvAWdaf4QlZ46S5Wp63-uyBqXEpFYeYnolYfsyvaR5us1i2s0PaOfjzgoSwJ_3O9raIMfqom4ReZWj237O6qTc-TBGMqR" />
 </div>
 </div>
 
@@ -169,7 +164,7 @@ export default function TemplatePage() {
 </ul>
 </div>
 <div className="flex-1 w-full">
-<img className="w-full rounded-2xl shadow-2xl border-4 border-surface-container-low" data-alt="modern glassmorphism UI element showing a colorful bar chart with soft shadows and elegant typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNIaWPrtFHilMnTYuLcspTxpS8JN9f3t804ABPsuQpeTIlwsyo9cZiuGzNzb_Vkm4Rz2-je8p2cIxR7JmBk0_RB6KoYVvk6mX1m3aGVrlpel3UeIGnW0FKREU0HNVu5HKkAfUu1TSc81LV-A4aPLJQkTi1CRou11sDyMPZCBr8dw5Xs7S1K7sjz_SnngXwHPXAZoro3KTkJ7iVXNFeT6pihVAJXU4wCE0d2HyIOYCYDWCFg5rQfVh2GBfyD03TmlM_kI9Wm6dLWH-q" />
+<img alt="modern glassmorphism UI element showing a colorful bar chart with soft shadows and elegant typography" className="w-full rounded-2xl shadow-2xl border-4 border-surface-container-low" data-alt="modern glassmorphism UI element showing a colorful bar chart with soft shadows and elegant typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNIaWPrtFHilMnTYuLcspTxpS8JN9f3t804ABPsuQpeTIlwsyo9cZiuGzNzb_Vkm4Rz2-je8p2cIxR7JmBk0_RB6KoYVvk6mX1m3aGVrlpel3UeIGnW0FKREU0HNVu5HKkAfUu1TSc81LV-A4aPLJQkTi1CRou11sDyMPZCBr8dw5Xs7S1K7sjz_SnngXwHPXAZoro3KTkJ7iVXNFeT6pihVAJXU4wCE0d2HyIOYCYDWCFg5rQfVh2GBfyD03TmlM_kI9Wm6dLWH-q" />
 </div>
 </div>
 </div>

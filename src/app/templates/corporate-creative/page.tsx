@@ -58,7 +58,7 @@ export default function TemplatePage() {
 </div>
 <div className="lg:col-span-5 relative">
 <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(103,58,183,0.3)] -rotate-2 hover:rotate-0 transition-transform duration-1000 group">
-<img alt="Creative Studio" className="w-full h-full object-cover" data-alt="Modern creative office space with minimalist furniture, large windows, colorful abstract art on walls, and warm natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOu6t7zXDMAiTPlkWv8vC6wt9hl6pRGfhoSEqgRJwbAwW_EAFK_lrlyDTicxQC68LhVERFUQk-vMZUyAm8LBIotUlhBxF3cgep9l92jM7XZ1k29Rq_RUlilos86-kloFv3G0xqF4DQk0bnXvP5IjmhXE2V7A_os5d7K14Q098WI1Avms1XjaZaU-6HZjIjUfde5N-qYv-1sQAUoegLCyh4Ol7bsn4Fflx5ysTvMPFcwDG2mcH5pCsoMiqsoJ7MCOg1WO4xDc_dUk26" />
+<img alt="Modern creative office space with minimalist furniture, large windows, colorful abstract art on walls, and warm natural sunlight" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOu6t7zXDMAiTPlkWv8vC6wt9hl6pRGfhoSEqgRJwbAwW_EAFK_lrlyDTicxQC68LhVERFUQk-vMZUyAm8LBIotUlhBxF3cgep9l92jM7XZ1k29Rq_RUlilos86-kloFv3G0xqF4DQk0bnXvP5IjmhXE2V7A_os5d7K14Q098WI1Avms1XjaZaU-6HZjIjUfde5N-qYv-1sQAUoegLCyh4Ol7bsn4Fflx5ysTvMPFcwDG2mcH5pCsoMiqsoJ7MCOg1WO4xDc_dUk26" />
 <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
 </div>
 
@@ -214,7 +214,7 @@ export default function TemplatePage() {
                         </p>
 <div className="flex items-center gap-5">
 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-secondary">
-<img alt="Client" data-alt="Portrait of a smiling creative female professional with a warm natural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4e6QoWhfz0I7UUwNkWMNquXztjOq0LWqcdEwU5iPHTN_bB5IveeU4Y2RsiPAvHR6waOd3oih0qu3eESZlUBB9BioCKKb9QFePahUjDGjm5I7d3o2MrgW5cmBEqXuxuL6ELgTtzWt-1gVuQ2T3aidJq3aH4wpgTSxZ8MpaTQFUlaDj2V5Kew_L914gBhkp1OgIXeoFhrVu77pPAaIsyOvRIz1XSaVAj-ZWBXrtMFlEDmYHpP1A-0FDzJzKW-k4Vend0haT99M8RURs" />
+<img alt="Portrait of a smiling creative female professional with a warm natural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4e6QoWhfz0I7UUwNkWMNquXztjOq0LWqcdEwU5iPHTN_bB5IveeU4Y2RsiPAvHR6waOd3oih0qu3eESZlUBB9BioCKKb9QFePahUjDGjm5I7d3o2MrgW5cmBEqXuxuL6ELgTtzWt-1gVuQ2T3aidJq3aH4wpgTSxZ8MpaTQFUlaDj2V5Kew_L914gBhkp1OgIXeoFhrVu77pPAaIsyOvRIz1XSaVAj-ZWBXrtMFlEDmYHpP1A-0FDzJzKW-k4Vend0haT99M8RURs" />
 </div>
 <div>
 <p className="font-extrabold text-lg">이서연 팀장</p>

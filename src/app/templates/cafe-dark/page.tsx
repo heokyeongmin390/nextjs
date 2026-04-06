@@ -25,7 +25,7 @@ export default function TemplatePage() {
 
 <section className="relative h-screen flex items-center justify-center overflow-hidden">
 <div className="absolute inset-0 z-0">
-<img alt="Dark espresso shot" className="w-full h-full object-cover opacity-60 grayscale" data-alt="close-up of rich dark espresso pouring from a chrome portafilter with dramatic low-key lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqMUuqnlwm7D-xzMB6G_ArkXzWmiWFyAIvgdJOv5besTgyuGRNT1c-eofOy_jAvBS3bE9ZZam0gWZkzQPImlnyumJh2WD5XNsLrGKNh5kCvDfELzXWyjojsLN-8JTbW0w-jTwwDBZEF9Olz1ZqRBfh3F0-xf-EWJzqVNigXvQP0DL9HIzkeBIDG-OJCHgI45SddSRm_905-WpMZ_xKRTKx8WyzSwEGoMkt9CaTM3cboYQKGxUk5HtvJD76_7LmHic2GM-I07KaU-dw" />
+<img alt="close-up of rich dark espresso pouring from a chrome portafilter with dramatic low-key lighting and deep shadows" className="w-full h-full object-cover opacity-60 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqMUuqnlwm7D-xzMB6G_ArkXzWmiWFyAIvgdJOv5besTgyuGRNT1c-eofOy_jAvBS3bE9ZZam0gWZkzQPImlnyumJh2WD5XNsLrGKNh5kCvDfELzXWyjojsLN-8JTbW0w-jTwwDBZEF9Olz1ZqRBfh3F0-xf-EWJzqVNigXvQP0DL9HIzkeBIDG-OJCHgI45SddSRm_905-WpMZ_xKRTKx8WyzSwEGoMkt9CaTM3cboYQKGxUk5HtvJD76_7LmHic2GM-I07KaU-dw" />
 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black"></div>
 </div>
 <div className="relative z-10 text-center px-6">
@@ -159,7 +159,7 @@ export default function TemplatePage() {
 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 <div className="order-2 md:order-1">
 <div className="aspect-square bg-neutral-900 relative grayscale contrast-125">
-<img className="w-full h-full object-cover opacity-50" data-alt="monochrome urban map-like view of a city street at night with high contrast streetlights" data-location="Seoul" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWJgf68NiaCN3BMqxn6WHFMpNfNTW8XNoHvsoWUFyBVq9bQ2l9BrL6KxGqgBDTkTFd51wGWEV6Nv_Qp3z9ygQs76Mick5rIVtIC1lkgy-v2hVRSTXtplmCGGeP70apcux43F3KI8STp8iBCZ6C43CCqqzh6YWj1CmZsWwrfWB7--J93tKGROOQPA1hK7yM4ImfACO5k5WBoLztcNCpOR9CuHtdtYqfC-Ry8AQnC_KFyJDDxyONGVdH3DK6UfySJdzmknTywsgqAUjP" />
+<img alt="monochrome urban map-like view of a city street at night with high contrast streetlights" className="w-full h-full object-cover opacity-50" data-location="Seoul" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWJgf68NiaCN3BMqxn6WHFMpNfNTW8XNoHvsoWUFyBVq9bQ2l9BrL6KxGqgBDTkTFd51wGWEV6Nv_Qp3z9ygQs76Mick5rIVtIC1lkgy-v2hVRSTXtplmCGGeP70apcux43F3KI8STp8iBCZ6C43CCqqzh6YWj1CmZsWwrfWB7--J93tKGROOQPA1hK7yM4ImfACO5k5WBoLztcNCpOR9CuHtdtYqfC-Ry8AQnC_KFyJDDxyONGVdH3DK6UfySJdzmknTywsgqAUjP" />
 <div className="absolute inset-0 flex items-center justify-center">
 <div className="w-4 h-4 bg-white rounded-full animate-ping"></div>
 <div className="absolute w-3 h-3 bg-white rounded-full"></div>
